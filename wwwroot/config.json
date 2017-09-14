@@ -4,6 +4,12 @@
         "terria"
     ],
     parameters: {
+        colorMap: [
+            {
+                color: "rgba(69,152,60,1.0)",
+                offset: 0
+            }
+        ],
         bingMapsKey: "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
         googleUrlShortenerKey: null,
         googleAnalyticsKey: null,
@@ -44,8 +50,6 @@
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
-            "",
-            "<a target=\"_blank\" href=\"http://www.nicta.com.au\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
             ""
         ],
         // Shown when things go wrong.
