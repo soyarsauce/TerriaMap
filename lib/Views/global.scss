@@ -13,16 +13,58 @@ body {
             display: block;
         }
     }
-    .tjs-standard-user-interface__sidePanel {
-        background: #CAD0DB;
-    }
+    // .tjs-standard-user-interface__sidePanel {
+    //     background: #CAD0DB;
+    // }
     .tjs-_buttons__btn-primary {
         background: #566273;
     }
 
+    .tjs-side-panel__header {
+        padding: 10px 5px 1px;
+    }
+
+    // hack for inverting theme :(
+    .tjs-notification-window__wrapper,
+    .tjs-badge-bar__header,
+    .tjs-sidebar-search__results,
+    .tjs-search-result__search-result.tjs-search-result__dark .tjs-search-result__btn,
+    .tjs-location-search-result__heading,
+    .tjs-location-search-result__dark svg,
+    .tjs-_buttons__btn--tertiary-dark,
+    .tjs-_buttons__btn--map,
+    .tjs-_buttons__btn--map svg,
+    .tjs-side-panel__workbenchEmpty svg,
+    .tjs-side-panel__workbenchEmpty {
+        color: #000;
+        fill: #000;
+    }
+    .tjs-_buttons__btn--map:hover svg {
+        fill: #fff;
+    }
+
+    .tjs-side-panel__workbenchEmpty {
+        border-color: #888;
+    }
+    
+    .tjs-_buttons__btn--tertiary-dark {
+        border: 1px solid #888;
+    }
+    .tjs-_buttons__btn--tertiary-dark:hover,
+    .tjs-search-result__search-result.tjs-search-result__dark .tjs-search-result__btn:hover {
+        border: 1px solid #000,
+    }
+    .tjs-_buttons__btn-primary:hover, .tjs-_buttons__btn-primary--hover {
+        background: #45983C;
+    }
+
+    .tjs-side-panel__addData {
+        margin: 10px 0;
+    }
+
     // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
     // You will also want to uncomment and change values in lib/Styles/variables.scss
-    /*
+
     // Import any custom fonts here
     //@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
 
@@ -157,6 +199,5 @@ body {
     .tjs-tabs__btn--tab:hover {    
         color:$color-secondary;
     }
-    */
 
 }

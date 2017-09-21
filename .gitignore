@@ -20,3 +20,6 @@ privateserverconfig.json
 wwwroot/privateconfig.json
 deploy/packages/
 deploy/work/
+
+# https://marketplace.visualstudio.com/items?itemName=xyz.local-history
+.history/
