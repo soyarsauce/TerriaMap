@@ -34,8 +34,25 @@ body {
     .tjs-_buttons__btn--tertiary-dark,
     .tjs-_buttons__btn--map,
     .tjs-_buttons__btn--map svg,
+
     .tjs-side-panel__workbenchEmpty svg,
-    .tjs-side-panel__workbenchEmpty {
+    .tjs-side-panel__workbenchEmpty,
+    
+    .tjs-panel__inner,
+
+    .tjs-feedback-button__feedback,
+    
+    .tjs-workbench-item__workbench-item,
+    .tjs-workbench__remove-button,
+    .tjs-workbench__remove-button svg,
+    .tjs-workbench-item__toggleColumn svg,
+    .tjs-viewing-controls__btn,
+    .tjs-viewing-controls__remove svg,
+    .tjs-legend__legend--svg text,
+
+    .tjs-concept-viewer__header button svg,
+    .tjs-workbench-item__visibilityColumn svg
+    {
         color: #000;
         fill: #000;
     }
@@ -60,6 +77,13 @@ body {
 
     .tjs-side-panel__addData {
         margin: 10px 0;
+    }
+
+    .tjs-feature-info-section__content a,
+    .tjs-feature-info-panel__panel a,
+    .tjs-feature-info-panel__panel a:visited {
+        color:#A7FF42;
+        text-decoration:underline;
     }
 
     // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
