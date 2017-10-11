@@ -39,8 +39,6 @@ body {
     .tjs-side-panel__workbenchEmpty,
     
     .tjs-panel__inner,
-
-    .tjs-feedback-button__feedback,
     
     .tjs-workbench-item__workbench-item,
     .tjs-workbench__remove-button,
@@ -55,6 +53,9 @@ body {
     {
         color: #000;
         fill: #000;
+    }
+    .tjs-feedback-button__feedback {
+        display:none;
     }
     .tjs-_buttons__btn--map:hover svg {
         fill: #fff;
@@ -72,6 +73,11 @@ body {
         border: 1px solid #000,
     }
     .tjs-_buttons__btn-primary:hover, .tjs-_buttons__btn-primary--hover {
+        color: #fff;
+        background: #45983C;
+    }
+    .tjs-_buttons__btn:hover {
+        color: #fff;
         background: #45983C;
     }
 
@@ -87,6 +93,11 @@ body {
             color:#A7FF42;
             text-decoration:underline;
         }
+    }
+    .fd-clickToRevealAddress {
+        background-color:transparent;
+        color:#A7FF42;
+        border:none;
     }
 
     // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
@@ -137,10 +148,10 @@ body {
     // All kinds of buttons in various screens
     .tjs-_buttons__btn {
         &-primary { 
-            font-family: $font-base; 
+            font-family: $font-base;
         }
         &:hover { 
-            color: $color-primary;             
+            color: $color-primary;
         }
     }
 
