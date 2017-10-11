@@ -79,11 +79,14 @@ body {
         margin: 10px 0;
     }
 
-    .tjs-feature-info-section__content a,
-    .tjs-feature-info-panel__panel a,
-    .tjs-feature-info-panel__panel a:visited {
-        color:#A7FF42;
-        text-decoration:underline;
+    .tjs-feature-info-panel__panel {
+        .tjs-feature-info-section__content a,
+        .tjs-feature-info-section__content a:visited,
+        .tjs-feature-info-panel__panel a,
+        .tjs-feature-info-panel__panel a:visited {
+            color:#A7FF42;
+            text-decoration:underline;
+        }
     }
 
     // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
