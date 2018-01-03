@@ -12,7 +12,7 @@
         ],
         bingMapsKey: "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
         googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
+        googleAnalyticsKey: "UA-108124437-1",
         googleAnalyticsOptions: null,
         /* Text that appears at the bottom of the map */
         disclaimer: {
