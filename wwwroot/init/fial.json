@@ -6,5 +6,1503 @@
     "west": 109
   },
   "baseMapName": "Bing Maps Roads",
-  "viewerMode": "2d"  
+  "viewerMode": "2d",
+  "catalog": [
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+          {
+              "name": "Land",
+              "type": "group",
+              "items": [
+                  {
+                      "name": "Agriculture and Mining",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                          {
+                              "name": "Land Use - Agricultural Commodities 2011",
+                              "type": "sdmx-json",
+                              "id": "ABS_SDMX-JSON_AGRIC_ABS_REGIONAL_ASGS",
+                              "rectangle": [
+                                  109,
+                                  -45,
+                                  158,
+                                  -8
+                              ],
+                              "cacheDuration": "300s",
+                              "regionNameTemplate": "{{name}}_code_2011",
+                              "sortValues": "id",
+                              "showWarnings": false,
+                              "cleanFootnotes": true,
+                              "forceShowDimensionIds": [
+                                  "MEASURE"
+                              ],
+                              "url": "http://stat.data.abs.gov.au/sdmx-json/data/ABS_REGIONAL_ASGS",
+                              "description": "Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1379.0.55.001Explanatory%20Notes12009-13?OpenDocument).<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ABS_REGIONAL_ASGS).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                              "singleValuedDimensionIds": [
+                                  "MEASURE"
+                              ],
+                              "totalValueIds": {
+                                  "*": [
+                                      "TOT",
+                                      "LFTOT"
+                                  ],
+                                  "SPC": [
+                                      "TT"
+                                  ],
+                                  "MTWP": [
+                                      "1M",
+                                      "2M",
+                                      "3M"
+                                  ],
+                                  "FMCF": [
+                                      "CF",
+                                      "1",
+                                      "2",
+                                      "3"
+                                  ],
+                                  "POUR": [
+                                      "TOT",
+                                      "1",
+                                      "2",
+                                      "2_0",
+                                      "2_11"
+                                  ],
+                                  "UAI1P": [
+                                      "TOT",
+                                      "2",
+                                      "2_S",
+                                      "2_D"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "UEMP"
+                                  ],
+                                  "FAMILY_TYPE": [
+                                      "6"
+                                  ],
+                                  "HH_TYPE": [
+                                      "4"
+                                  ],
+                                  "LEN": [
+                                      "99"
+                                  ],
+                                  "INFANT_AGE": [
+                                      "IMTOT"
+                                  ],
+                                  "DLC_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "DLC_11": [
+                                      "T"
+                                  ],
+                                  "ANZIC": [
+                                      "01",
+                                      "TOTAL"
+                                  ],
+                                  "LU_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "LU_11": [
+                                      "T"
+                                  ],
+                                  "LENDER": [
+                                      "99"
+                                  ],
+                                  "INDUSTRY": [
+                                      "-1",
+                                      "T",
+                                      "-"
+                                  ],
+                                  "SITC_REV3": [
+                                      "-1",
+                                      "0",
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8",
+                                      "9"
+                                  ],
+                                  "COUNTRY": [
+                                      "-"
+                                  ],
+                                  "STRD_BEDRD": [
+                                      "._TOT"
+                                  ],
+                                  "FMCF_INCC": [
+                                      "TOT_TOT"
+                                  ],
+                                  "DEPOSIT_TYPE": [
+                                      "6"
+                                  ],
+                                  "MINERAL_TYPE": [
+                                      "11"
+                                  ],
+                                  "MLU_0611": [
+                                      "9"
+                                  ],
+                                  "PLU_0611": [
+                                      "10"
+                                  ],
+                                  "PLC_0611": [
+                                      "10"
+                                  ],
+                                  "PERSON_LA": [
+                                      "16"
+                                  ],
+                                  "LEASE_TYPE": [
+                                      "3"
+                                  ],
+                                  "ASSET": [
+                                      "999"
+                                  ],
+                                  "SECTOR": [
+                                      "7",
+                                      "9"
+                                  ],
+                                  "VEHICLE": [
+                                      "900"
+                                  ],
+                                  "IND_R": [
+                                      "20"
+                                  ],
+                                  "RELP": [
+                                      "2"
+                                  ],
+                                  "ANCP": [
+                                      "TOTP"
+                                  ],
+                                  "LANP": [
+                                      "LOTE",
+                                      "71",
+                                      "52",
+                                      "41",
+                                      "65"
+                                  ],
+                                  "ENGLP": [
+                                      "OTH",
+                                      "SOL"
+                                  ],
+                                  "WORK": [
+                                      "9"
+                                  ],
+                                  "TYPE_WORK": [
+                                      "9"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "PLURALITY": [
+                                      "SX_6"
+                                  ]
+                              },
+                              "blacklist": {
+                                  "MEASURE": [
+                                      "AGRIC_[12]"
+                                  ]
+                              },
+                              "whitelist": {
+                                  "MEASURE": [
+                                      "AGRIC_.*"
+                                  ],
+                                  "FMCF": [
+                                      "TOT",
+                                      "[1-3]",
+                                      "9"
+                                  ],
+                                  "STRD": [
+                                      "TOT",
+                                      "OPD",
+                                      "[1-3]",
+                                      "9",
+                                      "11",
+                                      "Z",
+                                      "UPD"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "[1-4]",
+                                      "7",
+                                      "Z",
+                                      "UEMP"
+                                  ],
+                                  "MTWP": [
+                                      "TOT",
+                                      "[1-3]M",
+                                      "00[1-9]",
+                                      "010",
+                                      "011",
+                                      "232",
+                                      "TA",
+                                      "BA",
+                                      "B2",
+                                      "233",
+                                      "234",
+                                      "Z"
+                                  ],
+                                  "TYPP": [
+                                      "TOT",
+                                      "10",
+                                      "2",
+                                      "3",
+                                      "40",
+                                      "50",
+                                      "60",
+                                      "Z",
+                                      "V"
+                                  ],
+                                  "FMCF_INCC": [
+                                      ".*_.*"
+                                  ],
+                                  "IND": [
+                                      "-"
+                                  ],
+                                  "ANCP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "BPLP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "RELP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "LANP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "FMCF_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "HHCD_2016": [
+                                      "TOT",
+                                      "[0-9]{3}"
+                                  ],
+                                  "": [
+                                      "A[0-9]+",
+                                      "T.*",
+                                      "O.*"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ]
+                              },
+                              "selectedInitially": {
+                                  "REGIONTYPE": [
+                                      "SA4"
+                                  ],
+                                  "COB": [
+                                      "1101"
+                                  ],
+                                  "DT": [
+                                      "2"
+                                  ],
+                                  "RESPONSE_CAT": [
+                                      "RESPCLR_Y"
+                                  ],
+                                  "STATE": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ],
+                                  "ASGS_2011": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+          {
+              "name": "Social and Economic",
+              "type": "group",
+              "items": [
+                  {
+                      "name": "Census",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                          {
+                              "name": "Person",
+                              "type": "group",
+                              "isOpen": false,
+                              "items": [
+                                  {
+                                      "name": "Industry of Employment",
+                                      "type": "group",
+                                      "isOpen": false,
+                                      "items": [
+                                          {
+                                              "name": "by Occupation",
+                                              "type": "group",
+                                              "items": [
+                                                  {
+                                                      "name": "2011 Census",
+                                                      "type": "group",
+                                                      "items": [
+                                                          {
+                                                              "nameInCatalog": "By Statistical Area",
+                                                              "name": "Industry of Employment",
+                                                              "type": "sdmx-json",
+                                                              "id": "ABS_SDMX-JSON__ABS_CENSUS2011_B44",
+                                                              "rectangle": [
+                                                                  109,
+                                                                  -45,
+                                                                  158,
+                                                                  -8
+                                                              ],
+                                                              "cacheDuration": "300s",
+                                                              "regionNameTemplate": "{{name}}_code_2011",
+                                                              "sortValues": "id",
+                                                              "showWarnings": false,
+                                                              "cleanFootnotes": true,
+                                                              "forceShowDimensionIds": [
+                                                                  "MEASURE"
+                                                              ],
+                                                              "url": "http://stat.data.abs.gov.au/sdmx-json/data/ABS_CENSUS2011_B44",
+                                                              "description": "Counts are of all persons on Census night based on place of usual residence, not including overseas visitors.<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ABS_CENSUS2011_B44).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                                                              "aggregatedDimensionIds": [
+                                                                  "STATE"
+                                                              ],
+                                                              "totalValueIds": {
+                                                                  "*": [
+                                                                      "TOT",
+                                                                      "LFTOT"
+                                                                  ],
+                                                                  "SPC": [
+                                                                      "TT"
+                                                                  ],
+                                                                  "MTWP": [
+                                                                      "1M",
+                                                                      "2M",
+                                                                      "3M"
+                                                                  ],
+                                                                  "FMCF": [
+                                                                      "CF",
+                                                                      "1",
+                                                                      "2",
+                                                                      "3"
+                                                                  ],
+                                                                  "POUR": [
+                                                                      "TOT",
+                                                                      "1",
+                                                                      "2",
+                                                                      "2_0",
+                                                                      "2_11"
+                                                                  ],
+                                                                  "UAI1P": [
+                                                                      "TOT",
+                                                                      "2",
+                                                                      "2_S",
+                                                                      "2_D"
+                                                                  ],
+                                                                  "LFSP": [
+                                                                      "TOT",
+                                                                      "EMP",
+                                                                      "UEMP"
+                                                                  ],
+                                                                  "FAMILY_TYPE": [
+                                                                      "6"
+                                                                  ],
+                                                                  "HH_TYPE": [
+                                                                      "4"
+                                                                  ],
+                                                                  "LEN": [
+                                                                      "99"
+                                                                  ],
+                                                                  "INFANT_AGE": [
+                                                                      "IMTOT"
+                                                                  ],
+                                                                  "DLC_11NC": [
+                                                                      "210",
+                                                                      "205"
+                                                                  ],
+                                                                  "DLC_11": [
+                                                                      "T"
+                                                                  ],
+                                                                  "ANZIC": [
+                                                                      "01",
+                                                                      "TOTAL"
+                                                                  ],
+                                                                  "LU_11NC": [
+                                                                      "210",
+                                                                      "205"
+                                                                  ],
+                                                                  "LU_11": [
+                                                                      "T"
+                                                                  ],
+                                                                  "LENDER": [
+                                                                      "99"
+                                                                  ],
+                                                                  "INDUSTRY": [
+                                                                      "-1",
+                                                                      "T",
+                                                                      "-"
+                                                                  ],
+                                                                  "SITC_REV3": [
+                                                                      "-1",
+                                                                      "0",
+                                                                      "1",
+                                                                      "2",
+                                                                      "3",
+                                                                      "4",
+                                                                      "5",
+                                                                      "6",
+                                                                      "7",
+                                                                      "8",
+                                                                      "9"
+                                                                  ],
+                                                                  "COUNTRY": [
+                                                                      "-"
+                                                                  ],
+                                                                  "STRD_BEDRD": [
+                                                                      "._TOT"
+                                                                  ],
+                                                                  "FMCF_INCC": [
+                                                                      "TOT_TOT"
+                                                                  ],
+                                                                  "DEPOSIT_TYPE": [
+                                                                      "6"
+                                                                  ],
+                                                                  "MINERAL_TYPE": [
+                                                                      "11"
+                                                                  ],
+                                                                  "MLU_0611": [
+                                                                      "9"
+                                                                  ],
+                                                                  "PLU_0611": [
+                                                                      "10"
+                                                                  ],
+                                                                  "PLC_0611": [
+                                                                      "10"
+                                                                  ],
+                                                                  "PERSON_LA": [
+                                                                      "16"
+                                                                  ],
+                                                                  "LEASE_TYPE": [
+                                                                      "3"
+                                                                  ],
+                                                                  "ASSET": [
+                                                                      "999"
+                                                                  ],
+                                                                  "SECTOR": [
+                                                                      "7",
+                                                                      "9"
+                                                                  ],
+                                                                  "VEHICLE": [
+                                                                      "900"
+                                                                  ],
+                                                                  "IND_R": [
+                                                                      "20"
+                                                                  ],
+                                                                  "RELP": [
+                                                                      "2"
+                                                                  ],
+                                                                  "ANCP": [
+                                                                      "TOTP"
+                                                                  ],
+                                                                  "LANP": [
+                                                                      "LOTE",
+                                                                      "71",
+                                                                      "52",
+                                                                      "41",
+                                                                      "65"
+                                                                  ],
+                                                                  "ENGLP": [
+                                                                      "OTH",
+                                                                      "SOL"
+                                                                  ],
+                                                                  "WORK": [
+                                                                      "9"
+                                                                  ],
+                                                                  "TYPE_WORK": [
+                                                                      "9"
+                                                                  ],
+                                                                  "BUILDING_TYPE": [
+                                                                      "999",
+                                                                      "100",
+                                                                      "200",
+                                                                      "300",
+                                                                      "400",
+                                                                      "700",
+                                                                      "800"
+                                                                  ],
+                                                                  "TYPE_BLDG": [
+                                                                      "999",
+                                                                      "100",
+                                                                      "200",
+                                                                      "300",
+                                                                      "400",
+                                                                      "700",
+                                                                      "800"
+                                                                  ],
+                                                                  "PLURALITY": [
+                                                                      "SX_6"
+                                                                  ]
+                                                              },
+                                                              "whitelist": {
+                                                                  "FMCF": [
+                                                                      "TOT",
+                                                                      "[1-3]",
+                                                                      "9"
+                                                                  ],
+                                                                  "STRD": [
+                                                                      "TOT",
+                                                                      "OPD",
+                                                                      "[1-3]",
+                                                                      "9",
+                                                                      "11",
+                                                                      "Z",
+                                                                      "UPD"
+                                                                  ],
+                                                                  "LFSP": [
+                                                                      "TOT",
+                                                                      "EMP",
+                                                                      "[1-4]",
+                                                                      "7",
+                                                                      "Z",
+                                                                      "UEMP"
+                                                                  ],
+                                                                  "MTWP": [
+                                                                      "TOT",
+                                                                      "[1-3]M",
+                                                                      "00[1-9]",
+                                                                      "010",
+                                                                      "011",
+                                                                      "232",
+                                                                      "TA",
+                                                                      "BA",
+                                                                      "B2",
+                                                                      "233",
+                                                                      "234",
+                                                                      "Z"
+                                                                  ],
+                                                                  "TYPP": [
+                                                                      "TOT",
+                                                                      "10",
+                                                                      "2",
+                                                                      "3",
+                                                                      "40",
+                                                                      "50",
+                                                                      "60",
+                                                                      "Z",
+                                                                      "V"
+                                                                  ],
+                                                                  "FMCF_INCC": [
+                                                                      ".*_.*"
+                                                                  ],
+                                                                  "IND": [
+                                                                      "-"
+                                                                  ],
+                                                                  "ANCP_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{4}"
+                                                                  ],
+                                                                  "BPLP_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{4}"
+                                                                  ],
+                                                                  "RELP_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{4}"
+                                                                  ],
+                                                                  "LANP_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{4}"
+                                                                  ],
+                                                                  "FMCF_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{4}"
+                                                                  ],
+                                                                  "HHCD_2016": [
+                                                                      "TOT",
+                                                                      "[0-9]{3}"
+                                                                  ],
+                                                                  "": [
+                                                                      "A[0-9]+",
+                                                                      "T.*",
+                                                                      "O.*"
+                                                                  ],
+                                                                  "BUILDING_TYPE": [
+                                                                      "999",
+                                                                      "100",
+                                                                      "110",
+                                                                      "700",
+                                                                      "800",
+                                                                      "850"
+                                                                  ],
+                                                                  "TYPE_BLDG": [
+                                                                      "999",
+                                                                      "100",
+                                                                      "110",
+                                                                      "700",
+                                                                      "800",
+                                                                      "850"
+                                                                  ]
+                                                              },
+                                                              "selectedInitially": {
+                                                                  "REGIONTYPE": [
+                                                                      "SA4"
+                                                                  ],
+                                                                  "COB": [
+                                                                      "1101"
+                                                                  ],
+                                                                  "DT": [
+                                                                      "2"
+                                                                  ],
+                                                                  "RESPONSE_CAT": [
+                                                                      "RESPCLR_Y"
+                                                                  ],
+                                                                  "STATE": [
+                                                                      "1",
+                                                                      "2",
+                                                                      "3",
+                                                                      "4",
+                                                                      "5",
+                                                                      "6",
+                                                                      "7",
+                                                                      "8"
+                                                                  ],
+                                                                  "ASGS_2011": [
+                                                                      "1",
+                                                                      "2",
+                                                                      "3",
+                                                                      "4",
+                                                                      "5",
+                                                                      "6",
+                                                                      "7",
+                                                                      "8"
+                                                                  ]
+                                                              }
+                                                          }
+                                                      ]
+                                                  }
+                                              ]
+                                          }
+                                      ]
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+          {
+              "name": "Social and Economic",
+              "type": "group",
+              "items": [
+                  {
+                      "name": "Finance, Business and Trade",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                          {
+                              "name": "Merchandise Exports",
+                              "type": "sdmx-json",
+                              "id": "ABS_SDMX-JSON__MERCH_EXP",
+                              "rectangle": [
+                                  109,
+                                  -45,
+                                  158,
+                                  -8
+                              ],
+                              "cacheDuration": "300s",
+                              "sortValues": "id",
+                              "showWarnings": false,
+                              "cleanFootnotes": true,
+                              "forceShowDimensionIds": [
+                                  "MEASURE"
+                              ],
+                              "url": "http://stat.data.abs.gov.au/sdmx-json/data/MERCH_EXP",
+                              "description": "Not all the data available in this dataset is displayed here. Explanatory notes are available [here](http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/CB614212CEA1F9D2CA256A5B001BD796?opendocument)<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=MERCH_EXP).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                              "totalValueIds": {
+                                  "*": [
+                                      "TOT",
+                                      "LFTOT"
+                                  ],
+                                  "SPC": [
+                                      "TT"
+                                  ],
+                                  "MTWP": [
+                                      "1M",
+                                      "2M",
+                                      "3M"
+                                  ],
+                                  "FMCF": [
+                                      "CF",
+                                      "1",
+                                      "2",
+                                      "3"
+                                  ],
+                                  "POUR": [
+                                      "TOT",
+                                      "1",
+                                      "2",
+                                      "2_0",
+                                      "2_11"
+                                  ],
+                                  "UAI1P": [
+                                      "TOT",
+                                      "2",
+                                      "2_S",
+                                      "2_D"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "UEMP"
+                                  ],
+                                  "FAMILY_TYPE": [
+                                      "6"
+                                  ],
+                                  "HH_TYPE": [
+                                      "4"
+                                  ],
+                                  "LEN": [
+                                      "99"
+                                  ],
+                                  "INFANT_AGE": [
+                                      "IMTOT"
+                                  ],
+                                  "DLC_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "DLC_11": [
+                                      "T"
+                                  ],
+                                  "ANZIC": [
+                                      "01",
+                                      "TOTAL"
+                                  ],
+                                  "LU_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "LU_11": [
+                                      "T"
+                                  ],
+                                  "LENDER": [
+                                      "99"
+                                  ],
+                                  "INDUSTRY": [
+                                      "-1",
+                                      "T",
+                                      "-"
+                                  ],
+                                  "SITC_REV3": [
+                                      "-1",
+                                      "0",
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8",
+                                      "9"
+                                  ],
+                                  "COUNTRY": [
+                                      "-"
+                                  ],
+                                  "STRD_BEDRD": [
+                                      "._TOT"
+                                  ],
+                                  "FMCF_INCC": [
+                                      "TOT_TOT"
+                                  ],
+                                  "DEPOSIT_TYPE": [
+                                      "6"
+                                  ],
+                                  "MINERAL_TYPE": [
+                                      "11"
+                                  ],
+                                  "MLU_0611": [
+                                      "9"
+                                  ],
+                                  "PLU_0611": [
+                                      "10"
+                                  ],
+                                  "PLC_0611": [
+                                      "10"
+                                  ],
+                                  "PERSON_LA": [
+                                      "16"
+                                  ],
+                                  "LEASE_TYPE": [
+                                      "3"
+                                  ],
+                                  "ASSET": [
+                                      "999"
+                                  ],
+                                  "SECTOR": [
+                                      "7",
+                                      "9"
+                                  ],
+                                  "VEHICLE": [
+                                      "900"
+                                  ],
+                                  "IND_R": [
+                                      "20"
+                                  ],
+                                  "RELP": [
+                                      "2"
+                                  ],
+                                  "ANCP": [
+                                      "TOTP"
+                                  ],
+                                  "LANP": [
+                                      "LOTE",
+                                      "71",
+                                      "52",
+                                      "41",
+                                      "65"
+                                  ],
+                                  "ENGLP": [
+                                      "OTH",
+                                      "SOL"
+                                  ],
+                                  "WORK": [
+                                      "9"
+                                  ],
+                                  "TYPE_WORK": [
+                                      "9"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "PLURALITY": [
+                                      "SX_6"
+                                  ]
+                              },
+                              "blacklist": {
+                                  "SITC_REV3": [
+                                      "[0-9]{3}"
+                                  ],
+                                  "INDUSTRY": [
+                                      "[A-T]"
+                                  ]
+                              },
+                              "whitelist": {
+                                  "FMCF": [
+                                      "TOT",
+                                      "[1-3]",
+                                      "9"
+                                  ],
+                                  "STRD": [
+                                      "TOT",
+                                      "OPD",
+                                      "[1-3]",
+                                      "9",
+                                      "11",
+                                      "Z",
+                                      "UPD"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "[1-4]",
+                                      "7",
+                                      "Z",
+                                      "UEMP"
+                                  ],
+                                  "MTWP": [
+                                      "TOT",
+                                      "[1-3]M",
+                                      "00[1-9]",
+                                      "010",
+                                      "011",
+                                      "232",
+                                      "TA",
+                                      "BA",
+                                      "B2",
+                                      "233",
+                                      "234",
+                                      "Z"
+                                  ],
+                                  "TYPP": [
+                                      "TOT",
+                                      "10",
+                                      "2",
+                                      "3",
+                                      "40",
+                                      "50",
+                                      "60",
+                                      "Z",
+                                      "V"
+                                  ],
+                                  "FMCF_INCC": [
+                                      ".*_.*"
+                                  ],
+                                  "IND": [
+                                      "-"
+                                  ],
+                                  "ANCP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "BPLP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "RELP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "LANP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "FMCF_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "HHCD_2016": [
+                                      "TOT",
+                                      "[0-9]{3}"
+                                  ],
+                                  "": [
+                                      "A[0-9]+",
+                                      "T.*",
+                                      "O.*"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ]
+                              },
+                              "regionType": "ste",
+                              "selectedInitially": {
+                                  "COB": [
+                                      "1101"
+                                  ],
+                                  "DT": [
+                                      "2"
+                                  ],
+                                  "RESPONSE_CAT": [
+                                      "RESPCLR_Y"
+                                  ],
+                                  "STATE": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ],
+                                  "ASGS_2011": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "name": "National Datasets",
+      "type": "group",
+      "items": [
+          {
+              "name": "Social and Economic",
+              "type": "group",
+              "items": [
+                  {
+                      "name": "Finance, Business and Trade",
+                      "type": "group",
+                      "isOpen": false,
+                      "items": [
+                          {
+                              "name": "Number of Businesses",
+                              "type": "sdmx-json",
+                              "id": "ABS_SDMX-JSON_CABEE_ABS_REGIONAL_ASGS",
+                              "rectangle": [
+                                  109,
+                                  -45,
+                                  158,
+                                  -8
+                              ],
+                              "cacheDuration": "300s",
+                              "regionNameTemplate": "{{name}}_code_2011",
+                              "sortValues": "id",
+                              "showWarnings": false,
+                              "cleanFootnotes": true,
+                              "forceShowDimensionIds": [
+                                  "MEASURE"
+                              ],
+                              "url": "http://stat.data.abs.gov.au/sdmx-json/data/ABS_REGIONAL_ASGS",
+                              "description": "Explanatory notes are available [here](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1379.0.55.001Explanatory%20Notes12009-13?OpenDocument).<br/>You can view this data, along with explanations of the meaning of terms, on the ABS.Stat website [here](http://stat.data.abs.gov.au/Index.aspx?DatasetCode=ABS_REGIONAL_ASGS).  Click on the _i_ symbols on that page for further information and links. Please note that ABS.Stat beta is continuing to be developed. Data will be updated as soon as possible following its 11:30 am release on the ABS website.",
+                              "singleValuedDimensionIds": [
+                                  "MEASURE"
+                              ],
+                              "totalValueIds": {
+                                  "*": [
+                                      "TOT",
+                                      "LFTOT"
+                                  ],
+                                  "SPC": [
+                                      "TT"
+                                  ],
+                                  "MTWP": [
+                                      "1M",
+                                      "2M",
+                                      "3M"
+                                  ],
+                                  "FMCF": [
+                                      "CF",
+                                      "1",
+                                      "2",
+                                      "3"
+                                  ],
+                                  "POUR": [
+                                      "TOT",
+                                      "1",
+                                      "2",
+                                      "2_0",
+                                      "2_11"
+                                  ],
+                                  "UAI1P": [
+                                      "TOT",
+                                      "2",
+                                      "2_S",
+                                      "2_D"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "UEMP"
+                                  ],
+                                  "FAMILY_TYPE": [
+                                      "6"
+                                  ],
+                                  "HH_TYPE": [
+                                      "4"
+                                  ],
+                                  "LEN": [
+                                      "99"
+                                  ],
+                                  "INFANT_AGE": [
+                                      "IMTOT"
+                                  ],
+                                  "DLC_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "DLC_11": [
+                                      "T"
+                                  ],
+                                  "ANZIC": [
+                                      "01",
+                                      "TOTAL"
+                                  ],
+                                  "LU_11NC": [
+                                      "210",
+                                      "205"
+                                  ],
+                                  "LU_11": [
+                                      "T"
+                                  ],
+                                  "LENDER": [
+                                      "99"
+                                  ],
+                                  "INDUSTRY": [
+                                      "-1",
+                                      "T",
+                                      "-"
+                                  ],
+                                  "SITC_REV3": [
+                                      "-1",
+                                      "0",
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8",
+                                      "9"
+                                  ],
+                                  "COUNTRY": [
+                                      "-"
+                                  ],
+                                  "STRD_BEDRD": [
+                                      "._TOT"
+                                  ],
+                                  "FMCF_INCC": [
+                                      "TOT_TOT"
+                                  ],
+                                  "DEPOSIT_TYPE": [
+                                      "6"
+                                  ],
+                                  "MINERAL_TYPE": [
+                                      "11"
+                                  ],
+                                  "MLU_0611": [
+                                      "9"
+                                  ],
+                                  "PLU_0611": [
+                                      "10"
+                                  ],
+                                  "PLC_0611": [
+                                      "10"
+                                  ],
+                                  "PERSON_LA": [
+                                      "16"
+                                  ],
+                                  "LEASE_TYPE": [
+                                      "3"
+                                  ],
+                                  "ASSET": [
+                                      "999"
+                                  ],
+                                  "SECTOR": [
+                                      "7",
+                                      "9"
+                                  ],
+                                  "VEHICLE": [
+                                      "900"
+                                  ],
+                                  "IND_R": [
+                                      "20"
+                                  ],
+                                  "RELP": [
+                                      "2"
+                                  ],
+                                  "ANCP": [
+                                      "TOTP"
+                                  ],
+                                  "LANP": [
+                                      "LOTE",
+                                      "71",
+                                      "52",
+                                      "41",
+                                      "65"
+                                  ],
+                                  "ENGLP": [
+                                      "OTH",
+                                      "SOL"
+                                  ],
+                                  "WORK": [
+                                      "9"
+                                  ],
+                                  "TYPE_WORK": [
+                                      "9"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "200",
+                                      "300",
+                                      "400",
+                                      "700",
+                                      "800"
+                                  ],
+                                  "PLURALITY": [
+                                      "SX_6"
+                                  ]
+                              },
+                              "blacklist": {
+                                  "MEASURE": [
+                                      "CABEE_1"
+                                  ]
+                              },
+                              "whitelist": {
+                                  "MEASURE": [
+                                      "CABEE_.*"
+                                  ],
+                                  "FMCF": [
+                                      "TOT",
+                                      "[1-3]",
+                                      "9"
+                                  ],
+                                  "STRD": [
+                                      "TOT",
+                                      "OPD",
+                                      "[1-3]",
+                                      "9",
+                                      "11",
+                                      "Z",
+                                      "UPD"
+                                  ],
+                                  "LFSP": [
+                                      "TOT",
+                                      "EMP",
+                                      "[1-4]",
+                                      "7",
+                                      "Z",
+                                      "UEMP"
+                                  ],
+                                  "MTWP": [
+                                      "TOT",
+                                      "[1-3]M",
+                                      "00[1-9]",
+                                      "010",
+                                      "011",
+                                      "232",
+                                      "TA",
+                                      "BA",
+                                      "B2",
+                                      "233",
+                                      "234",
+                                      "Z"
+                                  ],
+                                  "TYPP": [
+                                      "TOT",
+                                      "10",
+                                      "2",
+                                      "3",
+                                      "40",
+                                      "50",
+                                      "60",
+                                      "Z",
+                                      "V"
+                                  ],
+                                  "FMCF_INCC": [
+                                      ".*_.*"
+                                  ],
+                                  "IND": [
+                                      "-"
+                                  ],
+                                  "ANCP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "BPLP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "RELP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "LANP_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "FMCF_2016": [
+                                      "TOT",
+                                      "[0-9]{4}"
+                                  ],
+                                  "HHCD_2016": [
+                                      "TOT",
+                                      "[0-9]{3}"
+                                  ],
+                                  "": [
+                                      "A[0-9]+",
+                                      "T.*",
+                                      "O.*"
+                                  ],
+                                  "BUILDING_TYPE": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ],
+                                  "TYPE_BLDG": [
+                                      "999",
+                                      "100",
+                                      "110",
+                                      "700",
+                                      "800",
+                                      "850"
+                                  ]
+                              },
+                              "selectedInitially": {
+                                  "REGIONTYPE": [
+                                      "SA4"
+                                  ],
+                                  "COB": [
+                                      "1101"
+                                  ],
+                                  "DT": [
+                                      "2"
+                                  ],
+                                  "RESPONSE_CAT": [
+                                      "RESPCLR_Y"
+                                  ],
+                                  "STATE": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ],
+                                  "ASGS_2011": [
+                                      "1",
+                                      "2",
+                                      "3",
+                                      "4",
+                                      "5",
+                                      "6",
+                                      "7",
+                                      "8"
+                                  ]
+                              }
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+            "items": [
+                {
+                    "url": "http://services.ga.gov.au/gis/rest/services/NM_Cultivated_and_Native_Vegetation/MapServer",
+                    "layers": "Cultivated_Areas,No_Data",
+                    "name": "Cultivated Areas",
+                    "type": "esri-mapServer",
+                    "info": [
+                        {
+                            "name": "Licence",
+                            "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+                        }
+                    ]
+                }
+            ],
+            "name": "Vegetation",
+            "type": "group"
+        }
+      ]
+    },
+    {
+      "name": "Data.gov.au",
+      "type": "group",
+      "items": [
+        {
+          "type": "group",
+          "name": "Department of Agriculture and Water Resources",
+          "preserveOrder": true,
+          "items": [
+            {
+                "name": "Catchment Scale Land Use 2016",
+                "id": "Root Group/National Data Sets/Land/Catchment Scale Land Use 2016",
+                "type": "ckan-resource",
+                "url": "https://data.gov.au",
+                "resourceId": "98e11819-e02f-4729-8368-148f24eb89a5",
+                "datasetId": "catchment-scale-land-use-of-australia-update-may-2016"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

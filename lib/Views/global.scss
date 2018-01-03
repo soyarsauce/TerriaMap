@@ -94,6 +94,13 @@ body {
             text-decoration:underline;
         }
     }
+
+    .tjs-explorer-window__explorer-panel a,
+    .tjs-explorer-window__explorer-panel a:visited {
+        color:#45983C;
+        text-decoration:underline;        
+    }
+
     .fd-clickToRevealAddress {
         background-color:transparent;
         color:#A7FF42;
