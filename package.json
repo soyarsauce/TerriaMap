@@ -1,5 +1,14 @@
 {
-  "name": "terriajs-map",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/husky"
+    ]
+  },
+  "name": "tm-offline",
   "version": "0.0.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
@@ -11,6 +20,7 @@
     "url": "http://github.com/TerriaJS/TerriaMap"
   },
   "dependencies": {
+    "offline-plugin": "^5.0.7",
     "pm2": "^3.2.2",
     "terriajs-server": "^3.0.0"
   },
@@ -20,7 +30,7 @@
     "awsRegion": "ap-southeast-2",
     "awsEc2InstanceType": "t2.small",
     "awsEc2ImageId": "ami-0065540df76a93885",
-    "awsKeyName": "terria-kring",
+    "awsKeyName": "terria-who",
     "awsS3ServerConfigOverridePath": "s3://terria-apps/map/privateserverconfig-2016-08-31.json",
     "awsS3ClientConfigOverridePath": "s3://terria-apps/map/privateclientconfig-2018-11-19.json",
     "docker": {
