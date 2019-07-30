@@ -10,6 +10,7 @@ var PrerenderSPAPlugin = require("prerender-spa-plugin");
 var Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 var path = require('path');
 var json5 = require("json5");
+const OfflinePlugin = require("offline-plugin");
 
 module.exports = function(devMode, hot) {
     var config = {
@@ -131,8 +132,8 @@ module.exports = function(devMode, hot) {
                 configJson.parameters.appBaseUrl.length > 0 &&
                 configJson.parameters.appBaseUrl);
 
-        console.log('The following routes generated from config.json\'s initializationUrls will be prerendered:');
-        console.log(prerenderRoutes);
+        // console.log('The following routes generated from config.json\'s initializationUrls will be prerendered:');
+        // console.log(prerenderRoutes);
 
         if (appBaseUrl) {
             try {
@@ -147,18 +148,43 @@ module.exports = function(devMode, hot) {
         } else {
             console.warn("Warning - no appBaseUrl specified, no sitemap will be generated.")
         }
-        config.plugins = [...config.plugins, new PrerenderSPAPlugin({
-            staticDir: path.resolve(__dirname, '..', 'wwwroot', ),
-            outputDir: path.resolve(__dirname, '..', 'wwwroot', 'prerendered'),
-            indexPath: path.resolve(__dirname, '..', 'wwwroot', 'index.html'),
-            routes: prerenderRoutes,
-            renderer: new Renderer({
-                renderAfterDocumentEvent: 'prerender-end',
-                // If you run out of memory, try a lower value here
-                maxConcurrentRoutes: 8,
-                // headless: false, // set to false for debugging
-            }),
-        })];
+        // config.plugins = [...config.plugins, new PrerenderSPAPlugin({
+        //     staticDir: path.resolve(__dirname, '..', 'wwwroot', ),
+        //     outputDir: path.resolve(__dirname, '..', 'wwwroot', 'prerendered'),
+        //     indexPath: path.resolve(__dirname, '..', 'wwwroot', 'index.html'),
+        //     routes: prerenderRoutes,
+        //     renderer: new Renderer({
+        //         renderAfterDocumentEvent: 'prerender-end',
+        //         // If you run out of memory, try a lower value here
+        //         maxConcurrentRoutes: 8,
+        //         // headless: false, // set to false for debugging
+        //     }),
+        // })];
+        config.plugins = [...config.plugins,
+            new OfflinePlugin({
+                excludes: ["**/*.map"],
+                updateStrategy: "changed",
+                appShell: "/index.html",
+                autoUpdate: 1000 * 60 * 2,
+
+                relativePaths: false,
+                publicPath: "/build/",
+                caches: {
+                  main: ["*TerriaMap*.js", "*.css", "*vendors*.js", "*.html"],
+                  additional: [/\.(woff|woff2|ttf|eot)$/], // load fonts after
+                  optional: [":rest:"],
+                },
+          
+                ServiceWorker: {
+                  events: true,
+                  entry: path.join(__dirname, '..', "lib/sw-additional.js"),
+                  minify: false,
+                  navigateFallbackURL: "/",
+                  scope: "/",
+                  publicPath: "/build/sw.js"
+                },
+            })
+        ];
     }
     return configureWebpackForTerriaJS(path.dirname(require.resolve('terriajs/package.json')), config, devMode, hot, MiniCssExtractPlugin);
 };
